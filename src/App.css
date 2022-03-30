@@ -1,38 +1,78 @@
-.App {
+#main-container {
+  place-items: center start;
+  font-weight: bold;
+}
+
+#formthing {
+  margin: auto;
+  display: block;
+}
+
+#titleForm {
+  padding: 5px;
   text-align: center;
+  font-style: italic;
+  font-size:26px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#petrimage {
+  animation: 1s linear 1s infinite alternate slidein;
+  margin-left: 40%;
+  padding-top: 10%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes slidein {
   from {
-    transform: rotate(0deg);
+    width: 30%;
+    height: 10%;
+    margin-left: 40%;
   }
+
   to {
-    transform: rotate(360deg);
+    width: 40%;
+    height: 200px;
+    margin-left: 30%;
+  }
+}
+
+#sign-in-form {
+  max-width: 500px;
+}
+
+#label-inputs {
+  font-weight: bold;
+  margin-left: 0%;
+}
+
+#buttonstyle {
+  background-image: linear-gradient(to right, #ff7b5c, #ff6c81);
+  background-size: auto;
+  border-radius: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .float-child {
+    margin: auto;
+  }
+  #grad {
+    background-image: linear-gradient(to bottom, #ff7b5c, #ff6c81);
+    background-size: auto;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .box {
+    padding: 20px;
+    display: flex;
+  }
+  #grad {
+    background-image: linear-gradient(to right, #ff7b5c, #ff6c81);
+    background-size: auto;
+  }
+
+  .float-child {
+    width: 50%;
+    float: left;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }

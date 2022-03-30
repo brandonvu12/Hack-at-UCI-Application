@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import petr from "./images/petr.png";
+import "react-toastify/dist/ReactToastify.css";
+import ApplicationForm from "./components/applicationForm";
 
-function App() {
+import "./App.css";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body id="grad">
+      <div id="form-box">
+        <div class="box">
+          <div class="float-child">
+            <ApplicationForm />
+          </div>
+          <div class="float-child">
+            <img src={petr} alt="Logo" width="200" id="petrimage" />
+          </div>
+        </div>
+      </div>
+    </body>
   );
 }
-
-export default App;
