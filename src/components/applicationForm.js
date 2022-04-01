@@ -99,10 +99,12 @@ const ApplicationForm = () => {
             required
           />
         </Form.Group>
-
-        <Button type="submit" className="m-5" id="buttonstyle">
+        <div id="buttondiv">
+          <Button type="submit" className="m-5" id="buttonstyle">
           Submit
         </Button>
+        </div>
+        
         <ToastContainer
           position="top-right"
           autoClose={5000}
